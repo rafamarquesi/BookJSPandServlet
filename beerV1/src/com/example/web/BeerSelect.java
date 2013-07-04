@@ -18,14 +18,12 @@ public class BeerSelect extends HttpServlet
       
       //response.setContentType("text/html");
       //PrintWriter out = response.getWriter();
-      //out.println("Beer Selection Advice<br>");
-      //testeSVN
+      //out.println("Beer Selection Advice<br>"); axo q agora essa porra funciona
       
       request.setAttribute("styles", result);
       
       RequestDispatcher view = request.getRequestDispatcher("result.jsp");
       
       view.forward(request,response);
-      //testeSVN
    }
 }
