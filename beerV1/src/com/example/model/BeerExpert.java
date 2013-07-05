@@ -1,5 +1,5 @@
 package com.example.model;
-
+//esse capeta não ta funfando
 import java.util.*;
 
 public class BeerExpert
@@ -18,6 +18,4 @@ public class BeerExpert
       }
       return(brands);      
    }
-   
-   //vai comita capeta
 }
