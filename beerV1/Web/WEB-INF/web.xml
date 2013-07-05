@@ -10,7 +10,7 @@
       <mime-type>text/html</mime-type>
    </mime-mapping>
    <mime-mapping>
-      <extension>txt</extension>
+      <extension>text</extension>
       <mime-type>text/plain</mime-type>
    </mime-mapping>
    

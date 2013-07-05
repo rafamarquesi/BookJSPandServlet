@@ -8,8 +8,7 @@ import java.util.*;
 
 public class BeerSelect extends HttpServlet
 {
-   public void doPost(HttpServletRequest request, HttpServletResponse response)
-                                          throws IOException, ServletException
+   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException
    {
    
       String c = request.getParameter("color");
@@ -18,7 +17,7 @@ public class BeerSelect extends HttpServlet
       
       //response.setContentType("text/html");
       //PrintWriter out = response.getWriter();
-      //out.println("Beer Selection Advice<br>"); axo q agora essa porra funciona
+      //out.println("Beer Selection Advice<br>");
       
       request.setAttribute("styles", result);
       
