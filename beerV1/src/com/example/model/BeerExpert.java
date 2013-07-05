@@ -16,6 +16,7 @@ public class BeerExpert
          brands.add("Jail Pale Ale");
          brands.add("Gout Stout");
       }
+      System.out.println("imprime");
       return(brands);      
    }
 }
