@@ -4,10 +4,10 @@ import java.util.*;
 
 public class BeerExpert
 {
-   public List getBrands(String color)
+   public List getBrands(String color, String body)
    {
       List brands = new ArrayList();
-      if (color.equals("amber")) 
+      if (color.equals("amber") && body.equals("medium"))
       {
          brands.add("Jack Amber");
          brands.add("Red Moose");

@@ -12,8 +12,10 @@ public class BeerSelect extends HttpServlet
    {
    
       String c = request.getParameter("color");
+      String b = request.getParameter("body");
+      
       BeerExpert especialista = new BeerExpert();
-      List result = especialista.getBrands(c);
+      List result = especialista.getBrands(c, b);
       
       //response.setContentType("text/html");
       //PrintWriter out = response.getWriter();

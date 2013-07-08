@@ -21,6 +21,13 @@
         out.print("<br>try: "+it.next());
      }
    %>
-   
+   <br><br>
+   <%
+   	 String [] sizes = request.getParameterValues("sizes");
+   	 for(int i = 0; i < sizes.length; i++)
+   	 {
+   		out.print("<br>sizes: "+sizes[i]);
+   	 }
+   %>
   </body>
 </html>
