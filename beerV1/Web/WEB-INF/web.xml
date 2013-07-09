@@ -1,27 +1,31 @@
-<?xml version = '1.0' encoding = 'windows-1252'?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee">
-   
-   <description>Empty web.xml file for Web Application</description>
-   <session-config>
-      <session-timeout>35</session-timeout>
-   </session-config>
-   <mime-mapping>
-      <extension>html</extension>
-      <mime-type>text/html</mime-type>
-   </mime-mapping>
-   <mime-mapping>
-      <extension>text</extension>
-      <mime-type>text/plain</mime-type>
-   </mime-mapping>
-   
-   <servlet>
-      <servlet-name>Ch3 Beer</servlet-name>
-      <servlet-class>com.example.web.BeerSelect</servlet-class>
-   </servlet>
-   
-   <servlet-mapping>
-      <servlet-name>Ch3 Beer</servlet-name>
-      <url-pattern>/SelectBeer.do</url-pattern>
-   </servlet-mapping>
-   
+<?xml version="1.0" encoding="WINDOWS-1252"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.4">
+  <description>Empty web.xml file for Web Application</description>
+  <session-config>
+    <session-timeout>35</session-timeout>
+  </session-config>
+  <mime-mapping>
+    <extension>html</extension>
+    <mime-type>text/html</mime-type>
+  </mime-mapping>
+  <mime-mapping>
+    <extension>text</extension>
+    <mime-type>text/plain</mime-type>
+  </mime-mapping>
+  <servlet>
+    <servlet-name>Ch3 Beer</servlet-name>
+    <servlet-class>com.example.web.BeerSelect</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Ch3 Beer</servlet-name>
+    <url-pattern>/SelectBeer.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Code Return</servlet-name>
+    <servlet-class>com.example.web.CodeReturn</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Code Return</servlet-name>
+    <url-pattern>/CodeReturn.do</url-pattern>
+  </servlet-mapping>
 </web-app>
