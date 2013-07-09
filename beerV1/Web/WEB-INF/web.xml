@@ -12,6 +12,7 @@
     <extension>text</extension>
     <mime-type>text/plain</mime-type>
   </mime-mapping>
+  
   <servlet>
     <servlet-name>Ch3 Beer</servlet-name>
     <servlet-class>com.example.web.BeerSelect</servlet-class>
@@ -20,6 +21,7 @@
     <servlet-name>Ch3 Beer</servlet-name>
     <url-pattern>/SelectBeer.do</url-pattern>
   </servlet-mapping>
+  
   <servlet>
     <servlet-name>Code Return</servlet-name>
     <servlet-class>com.example.web.CodeReturn</servlet-class>
@@ -27,5 +29,22 @@
   <servlet-mapping>
     <servlet-name>Code Return</servlet-name>
     <url-pattern>/CodeReturn.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Test Init Params</servlet-name>
+    <servlet-class>com.example.web.TestInitParams</servlet-class>
+    <init-param>
+    	<param-name>adminEmail</param-name>
+    	<param-value>marquesi.cc@gmail.com</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>mainEmail</param-name>
+    	<param-value>rafael.4marcos.nt@gmail.com</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test Init Params</servlet-name>
+    <url-pattern>/TestInitParams.do</url-pattern>
   </servlet-mapping>
 </web-app>
