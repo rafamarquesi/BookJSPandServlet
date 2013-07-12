@@ -29,5 +29,9 @@
    		out.print("<br>sizes: "+sizes[i]);
    	 }
    %>
+   <br><br>
+   <%
+     out.print(getServletContext().getInitParameter("adminEmail"));
+   %>
   </body>
 </html>
