@@ -23,8 +23,10 @@ public class ListenerTester extends HttpServlet {
 		
 		out.println("<br>");
 		
-		Dog dog = (Dog) getServletContext().getAttribute("dog");
-		
-		out.println("Dog's breed is: " + dog.getBreed());
+		synchronized (getServletContext()) {
+			Dog dog = (Dog) getServletContext().getAttribute("dog");
+			
+			out.println("Dog's breed is: " + dog.getBreed());
+		}
 	}
 }

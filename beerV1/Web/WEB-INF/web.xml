@@ -57,6 +57,6 @@
   </context-param>
   <context-param>
   	<param-name>breed</param-name>
-    <param-value>Poodle</param-value>
+    <param-value>Great Dane</param-value>
   </context-param>
 </web-app>
