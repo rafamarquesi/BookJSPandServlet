@@ -18,4 +18,10 @@ public class BeerExpert
       }
       return(brands);      
    }
+   
+   public String getAdvice(String answer){
+	   
+	   
+	   return null;
+   }
 }

@@ -44,6 +44,14 @@
     <servlet-name>ListenerTester</servlet-name>
     <url-pattern>/ListenerTester.do</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>Test Session Attributes</servlet-name>
+  	<servlet-class>com.example.web.TestSessionAttributes</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Test Session Attributes</servlet-name>
+  	<url-pattern>/TestSessionAttributes.do</url-pattern>
+  </servlet-mapping>
   <listener>
     <listener-class>com.example.MyServletContextListener</listener-class>
   </listener>
