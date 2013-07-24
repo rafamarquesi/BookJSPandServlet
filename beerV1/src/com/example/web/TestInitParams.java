@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class TestInitParams extends HttpServlet
 {
@@ -26,6 +27,19 @@ public class TestInitParams extends HttpServlet
 		out.println("main email is " + getServletContext().getInitParameter("mainEmail"));
 		out.println("<br>");
 		out.println("admin email is " + getServletContext().getInitParameter("adminEmail"));
+		
+		HttpSession session = request.getSession();
+		
+		if(session.isNew())
+		{
+			out.println("<br>");
+			out.println("This is a new session!");
+		}
+		else
+		{
+			out.println("<br>");
+			out.println("Welcome back!");
+		}
 	}
 
 }

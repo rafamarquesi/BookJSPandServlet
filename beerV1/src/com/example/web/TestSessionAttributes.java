@@ -19,9 +19,11 @@ public class TestSessionAttributes extends HttpServlet
 		out.println("test session attributes<br>");
 		
 		HttpSession session = request.getSession();
+		session.setMaxInactiveInterval(5*60);//configurando timeout da sessao
 		
 		out.println("<html><body>");
 		out.println("<a href=\"" + response.encodeURL("/beerV1/TestSessionAttributes.do") + "\">click me</a>");
+		out.println("<a href=\"" + response.encodeRedirectURL("/beerV1/TestInitParams.do")+ "\">click me</a>");//redirecionando
 		out.println("<html><body>");
 		
 		if(session.isNew())
