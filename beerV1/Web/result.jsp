@@ -33,5 +33,9 @@
    <%
      out.print(getServletContext().getInitParameter("adminEmail"));
    %>
+   <br><br>
+   <%
+     out.print("User Name: " + request.getAttribute("username"));
+   %>
   </body>
 </html>

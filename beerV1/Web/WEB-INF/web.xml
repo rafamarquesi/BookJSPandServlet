@@ -45,15 +45,26 @@
     <url-pattern>/ListenerTester.do</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>Test Session Attributes</servlet-name>
-  	<servlet-class>com.example.web.TestSessionAttributes</servlet-class>
+    <servlet-name>Test Session Attributes</servlet-name>
+    <servlet-class>com.example.web.TestSessionAttributes</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>Test Session Attributes</servlet-name>
-  	<url-pattern>/TestSessionAttributes.do</url-pattern>
+    <servlet-name>Test Session Attributes</servlet-name>
+    <url-pattern>/TestSessionAttributes.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Cookie Test</servlet-name>
+    <servlet-class>com.example.web.CookieTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cookie Test</servlet-name>
+    <url-pattern>/CookieTest.do</url-pattern>
   </servlet-mapping>
   <listener>
     <listener-class>com.example.MyServletContextListener</listener-class>
+  </listener>
+  <listener>
+    <listener-class>com.example.BeerSessionCounter</listener-class>
   </listener>
   <context-param>
     <param-name>adminEmail</param-name>
@@ -64,7 +75,7 @@
     <param-value>rafael.4marcos.nt@gmail.com</param-value>
   </context-param>
   <context-param>
-  	<param-name>breed</param-name>
+    <param-name>breed</param-name>
     <param-value>Great Dane</param-value>
   </context-param>
 </web-app>
