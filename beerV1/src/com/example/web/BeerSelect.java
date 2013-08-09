@@ -5,6 +5,7 @@ import javax.servlet.http.*;
 
 import java.io.*;
 
+import com.example.BeerAttributeListener;
 import com.example.BeerSessionCounter;
 import com.example.model.*;
 
@@ -16,7 +17,7 @@ public class BeerSelect extends HttpServlet
 	{		
 		String c = request.getParameter("color");
 		String b = request.getParameter("body");
-
+		
 		BeerExpert especialista = new BeerExpert();
 		List result = especialista.getBrands(c, b);
 
@@ -27,8 +28,10 @@ public class BeerSelect extends HttpServlet
 		
 		if(!userName.equals(""))
 			request.setAttribute("username", userName);
-		
+				
 		request.setAttribute("styles", result);
+		System.out.println(BeerSessionCounter.getActiveSessions());
+		request.setAttribute("beerSessionCounter", BeerSessionCounter.getActiveSessions());
 
 		RequestDispatcher view = request.getRequestDispatcher("result.jsp");
 

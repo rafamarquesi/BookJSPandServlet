@@ -37,5 +37,9 @@
    <%
      out.print("User Name: " + request.getAttribute("username"));
    %>
+   <br><br>
+   <%
+     out.print("Number of session: " + request.getAttribute("beerSessionCounter"));
+   %>
   </body>
 </html>

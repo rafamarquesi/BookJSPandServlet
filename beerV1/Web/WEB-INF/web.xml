@@ -66,6 +66,9 @@
   <listener>
     <listener-class>com.example.BeerSessionCounter</listener-class>
   </listener>
+  <listener>
+    <listener-class>com.example.BeerAttributeListener</listener-class>
+  </listener>
   <context-param>
     <param-name>adminEmail</param-name>
     <param-value>marquesi.cc@gmail.com</param-value>
